@@ -70,4 +70,46 @@ function selectEducation(index) {
 
     educationItems[index].classList.toggle('selected');
 }
-  
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Modal functionality
+    const modal = document.getElementById("dev-modal");
+    const closeButton = document.querySelector(".close-button");
+
+    if (modal) {
+        modal.style.display = "block"; // Show the modal when the page loads
+    }
+
+    if (closeButton) {
+        closeButton.onclick = function() {
+            if (modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+
+    // Optional: Close modal if user clicks outside of it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            if (modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+
+    // Typed.js functionality (if it exists, keep it)
+    if (typeof Typed !== 'undefined') {
+        var typed = new Typed(".multi-text", {
+            strings: ["Game Designer", "Web Developer", "Programmer", "Engineer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        });
+    }
+});
+
+function navSlide() {
+    const nav = document.querySelector('.nav-links');
+    nav.classList.toggle('nav-active');
+}
