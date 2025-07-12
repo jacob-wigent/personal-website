@@ -1,0 +1,100 @@
+@use "sass:color";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $white;
+    color: $dark;
+    font-family: $font-body;
+    scroll-behavior: smooth;
+}
+
+@mixin heading($size, $weight, $spacing) {
+  font-family: $font-heading;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+
+h1 { @include heading(74px, 700, -3px); }
+h2 { @include heading(60px, 700, -3px); }
+h3 { @include heading(48px, 700, -3px); }
+h4 { @include heading(40px, 500, -1.5px); }
+h5 { @include heading(32px, 500, -1.5px); }
+h6 { @include heading(24px, 500, -1.5px); }
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+code, pre {
+  font-family: $font-mono;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  overflow-x: auto;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+  font-family: $font-body;
+
+  li::marker {
+    color: $accent;
+  }
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+
+  li::marker {
+    font-family: $font-mono;
+  }
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  color: $accent;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  overflow: hidden;
+  top: 7px;
+
+  &::after {
+    content: "";
+    background-color: $accent;
+    position: absolute;
+    left: 0;
+    bottom: 3px; // You can tweak this for spacing below text
+    width: 100%;
+    height: 2px;
+    background-color: $accent;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    color: color.adjust($accent, $lightness: $darken);
+
+    &::after {
+        background-color: color.adjust($accent, $lightness: $darken);
+        transform: translateY(2px);
+    }
+  }
+}
