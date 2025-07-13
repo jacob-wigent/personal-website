@@ -39,6 +39,7 @@ npm run preview
 - [`@nuxt/icon`](https://icon.nuxt.com) – use thousands of icons with `<Icon name="..." />`
 - [`@nuxt/fonts`](https://github.com/nuxt-modules/fonts) – load and optimize Google Fonts easily
 - **Sass (SCSS)** – for custom styles and layout, no utility frameworks
+- **GSAP** - for advanced animation
 
 ---
 
