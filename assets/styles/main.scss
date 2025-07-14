@@ -28,9 +28,9 @@ html {
 h1 { @include heading(80px, 700, -3px); }
 h2 { @include heading(60px, 700, -3px); }
 h3 { @include heading(48px, 700, -3px); }
-h4 { @include heading(40px, 500, -1.5px); }
-h5 { @include heading(32px, 500, -1.5px); }
-h6 { @include heading(24px, 500, -1.5px); }
+h4 { @include heading(40px, 500, -1px); }
+h5 { @include heading(32px, 500, -1px); }
+h6 { @include heading(24px, 500, -1px); }
 
 p {
     font-size: 16px;

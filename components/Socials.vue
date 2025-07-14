@@ -24,6 +24,9 @@ const props = defineProps<{
     a {
         all: unset;
         cursor: pointer;
+        &::after {
+            display: none;
+        }
     }
 
     #socials {

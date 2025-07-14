@@ -42,11 +42,11 @@
                     backgroundScheme.value = Scheme.Mixed;
                 },
             })
-            .from("#about h5, #about p", {
-                y: 50,
+            .from("#about .heading, #about .content", {
+                y: 100,
                 opacity: 0,
                 duration: 0.8,
-                stagger: 0.2,
+                stagger: 0.5,
                 ease: "power2.in",
             }, "-=0.3");
 
@@ -80,11 +80,11 @@
                     backgroundScheme.value = Scheme.Dark;
                 },
             })
-            .from("#experience h5, #experience p", {
-                y: 50,
+            .from("#experience .heading, #experience .content", {
+                y: 100,
                 opacity: 0,
                 duration: 0.8,
-                stagger: 0.2,
+                stagger: 0.5,
                 ease: "power2.in"
             }, "-=0.3");
 
@@ -133,49 +133,30 @@
             </div>
         </div>
     </section>
-    <section id="about">
-        <h5>About</h5>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quo et qui magnam provident. Deserunt minus earum, iusto, cum dicta ab iste dignissimos, officia ea magnam aliquid laborum nihil provident!
-        Quam doloremque excepturi ducimus necessitatibus fugiat dolor sint similique, adipisci at nostrum, ab sunt perspiciatis. Tenetur obcaecati ipsa, voluptas ex veritatis, deleniti, ipsum consequatur suscipit laborum recusandae ea voluptates excepturi.
-        Illo, vero laudantium! Repellat maxime, excepturi in quod assumenda, incidunt tenetur fugit ad, aspernatur nemo quis earum amet quasi saepe doloribus fuga quidem repellendus vero magnam. Incidunt magni nisi aliquam?
-        Voluptates libero, delectus aspernatur ex fugiat placeat consequuntur quia dolores expedita, vero perferendis velit adipisci sint. Aliquid commodi dolore neque, nam necessitatibus, porro facilis, culpa amet expedita soluta saepe at?
-        Corporis error et amet vitae cum facere quae molestias necessitatibus ea sed labore sapiente iure veritatis voluptatum sit, laudantium repellendus id possimus corrupti quidem cumque nihil? Dolor molestiae ullam voluptatum!
-        </p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quo et qui magnam provident. Deserunt minus earum, iusto, cum dicta ab iste dignissimos, officia ea magnam aliquid laborum nihil provident!
-        Quam doloremque excepturi ducimus necessitatibus fugiat dolor sint similique, adipisci at nostrum, ab sunt perspiciatis. Tenetur obcaecati ipsa, voluptas ex veritatis, deleniti, ipsum consequatur suscipit laborum recusandae ea voluptates excepturi.
-        Illo, vero laudantium! Repellat maxime, excepturi in quod assumenda, incidunt tenetur fugit ad, aspernatur nemo quis earum amet quasi saepe doloribus fuga quidem repellendus vero magnam. Incidunt magni nisi aliquam?
-        Voluptates libero, delectus aspernatur ex fugiat placeat consequuntur quia dolores expedita, vero perferendis velit adipisci sint. Aliquid commodi dolore neque, nam necessitatibus, porro facilis, culpa amet expedita soluta saepe at?
-        Corporis error et amet vitae cum facere quae molestias necessitatibus ea sed labore sapiente iure veritatis voluptatum sit, laudantium repellendus id possimus corrupti quidem cumque nihil? Dolor molestiae ullam voluptatum!
-        </p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quo et qui magnam provident. Deserunt minus earum, iusto, cum dicta ab iste dignissimos, officia ea magnam aliquid laborum nihil provident!
-        Quam doloremque excepturi ducimus necessitatibus fugiat dolor sint similique, adipisci at nostrum, ab sunt perspiciatis. Tenetur obcaecati ipsa, voluptas ex veritatis, deleniti, ipsum consequatur suscipit laborum recusandae ea voluptates excepturi.
-        Illo, vero laudantium! Repellat maxime, excepturi in quod assumenda, incidunt tenetur fugit ad, aspernatur nemo quis earum amet quasi saepe doloribus fuga quidem repellendus vero magnam. Incidunt magni nisi aliquam?
-        Voluptates libero, delectus aspernatur ex fugiat placeat consequuntur quia dolores expedita, vero perferendis velit adipisci sint. Aliquid commodi dolore neque, nam necessitatibus, porro facilis, culpa amet expedita soluta saepe at?
-        Corporis error et amet vitae cum facere quae molestias necessitatibus ea sed labore sapiente iure veritatis voluptatum sit, laudantium repellendus id possimus corrupti quidem cumque nihil? Dolor molestiae ullam voluptatum!
-        </p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quo et qui magnam provident. Deserunt minus earum, iusto, cum dicta ab iste dignissimos, officia ea magnam aliquid laborum nihil provident!
-        Quam doloremque excepturi ducimus necessitatibus fugiat dolor sint similique, adipisci at nostrum, ab sunt perspiciatis. Tenetur obcaecati ipsa, voluptas ex veritatis, deleniti, ipsum consequatur suscipit laborum recusandae ea voluptates excepturi.
-        Illo, vero laudantium! Repellat maxime, excepturi in quod assumenda, incidunt tenetur fugit ad, aspernatur nemo quis earum amet quasi saepe doloribus fuga quidem repellendus vero magnam. Incidunt magni nisi aliquam?
-        Voluptates libero, delectus aspernatur ex fugiat placeat consequuntur quia dolores expedita, vero perferendis velit adipisci sint. Aliquid commodi dolore neque, nam necessitatibus, porro facilis, culpa amet expedita soluta saepe at?
-        Corporis error et amet vitae cum facere quae molestias necessitatibus ea sed labore sapiente iure veritatis voluptatum sit, laudantium repellendus id possimus corrupti quidem cumque nihil? Dolor molestiae ullam voluptatum!
-        </p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quo et qui magnam provident. Deserunt minus earum, iusto, cum dicta ab iste dignissimos, officia ea magnam aliquid laborum nihil provident!
-        Quam doloremque excepturi ducimus necessitatibus fugiat dolor sint similique, adipisci at nostrum, ab sunt perspiciatis. Tenetur obcaecati ipsa, voluptas ex veritatis, deleniti, ipsum consequatur suscipit laborum recusandae ea voluptates excepturi.
-        Illo, vero laudantium! Repellat maxime, excepturi in quod assumenda, incidunt tenetur fugit ad, aspernatur nemo quis earum amet quasi saepe doloribus fuga quidem repellendus vero magnam. Incidunt magni nisi aliquam?
-        Voluptates libero, delectus aspernatur ex fugiat placeat consequuntur quia dolores expedita, vero perferendis velit adipisci sint. Aliquid commodi dolore neque, nam necessitatibus, porro facilis, culpa amet expedita soluta saepe at?
-        Corporis error et amet vitae cum facere quae molestias necessitatibus ea sed labore sapiente iure veritatis voluptatum sit, laudantium repellendus id possimus corrupti quidem cumque nihil? Dolor molestiae ullam voluptatum!
-        </p>
-
-    </section>
-    <section id="experience">
-        <h5>Experience</h5>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quo et qui magnam provident. Deserunt minus earum, iusto, cum dicta ab iste dignissimos, officia ea magnam aliquid laborum nihil provident!
-        Quam doloremque excepturi ducimus necessitatibus fugiat dolor sint similique, adipisci at nostrum, ab sunt perspiciatis. Tenetur obcaecati ipsa, voluptas ex veritatis, deleniti, ipsum consequatur suscipit laborum recusandae ea voluptates excepturi.
-        Illo, vero laudantium! Repellat maxime, excepturi in quod assumenda, incidunt tenetur fugit ad, aspernatur nemo quis earum amet quasi saepe doloribus fuga quidem repellendus vero magnam. Incidunt magni nisi aliquam?
-        Voluptates libero, delectus aspernatur ex fugiat placeat consequuntur quia dolores expedita, vero perferendis velit adipisci sint. Aliquid commodi dolore neque, nam necessitatibus, porro facilis, culpa amet expedita soluta saepe at?
-        Corporis error et amet vitae cum facere quae molestias necessitatibus ea sed labore sapiente iure veritatis voluptatum sit, laudantium repellendus id possimus corrupti quidem cumque nihil? Dolor molestiae ullam voluptatum!
-        </p>
-    </section>
+    <LandingSection id="about" num="1" heading="About Me" dark="true">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum qui eligendi laboriosam eius totam eos consequuntur unde. Dicta officiis ipsa ratione nostrum doloremque quo doloribus, corporis reiciendis provident, itaque repellat.
+        Sed quae possimus deserunt quos eos, excepturi optio quidem modi maiores fugit at veniam nobis perspiciatis aspernatur dicta quam debitis quod temporibus quisquam praesentium quibusdam a id aperiam velit. Ipsum.
+        Odit error dicta asperiores laboriosam alias eum fugiat dolorum, officiis nam earum temporibus doloremque suscipit quam! Rerum consequatur modi, quo obcaecati earum consequuntur repellat dignissimos distinctio cupiditate ullam similique maiores.
+        Numquam inventore iure illo. Ipsum delectus cumque quibusdam unde impedit esse hic eius quas ipsa itaque et at fuga odit rem repellendus ullam, optio aliquam est? Odit maxime nobis exercitationem.
+        Voluptatum sequi molestias id. Mollitia eum omnis, voluptatibus necessitatibus quo illum fugit? Voluptas minus nam ratione impedit nulla! Sed velit id accusamus in minima neque iure sapiente, culpa quo perspiciatis.
+        Modi incidunt quis dolorem dignissimos sint cum quae sit. Sit rerum minus deserunt unde, quidem doloremque libero saepe ab maiores voluptate? Nesciunt repudiandae aut excepturi quis reiciendis dignissimos eum eius!
+        Beatae omnis officia dolorum minima neque labore quisquam iusto ipsam fuga autem unde cum, dicta cupiditate sit voluptatibus? Error incidunt repellendus reiciendis obcaecati corporis alias minima architecto porro deleniti soluta.
+        Sint quidem beatae architecto hic dolor! Hic, similique ratione, sapiente necessitatibus incidunt aperiam voluptatibus iure alias odit minima animi veniam consequatur illo maiores deleniti quod aut magnam molestias tempora ad!
+        Laudantium totam vitae quia, labore eaque ea illo repudiandae recusandae fugiat illum est assumenda minus magni amet. Quae laborum tempore repellat laudantium! Fugit rerum sequi voluptatum sit, laborum voluptatibus est.
+        Quaerat, labore molestias, atque voluptates sit aspernatur distinctio minima blanditiis exercitationem, totam perspiciatis id earum nemo error! Quia earum assumenda exercitationem cum non sequi, molestias aspernatur. Maiores quis esse totam!</p>
+    </LandingSection>
+    <LandingSection id="experience" num="2" heading="My Experience" dark="false">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum qui eligendi laboriosam eius totam eos consequuntur unde. Dicta officiis ipsa ratione nostrum doloremque quo doloribus, corporis reiciendis provident, itaque repellat.
+        Sed quae possimus deserunt quos eos, excepturi optio quidem modi maiores fugit at veniam nobis perspiciatis aspernatur dicta quam debitis quod temporibus quisquam praesentium quibusdam a id aperiam velit. Ipsum.
+        Odit error dicta asperiores laboriosam alias eum fugiat dolorum, officiis nam earum temporibus doloremque suscipit quam! Rerum consequatur modi, quo obcaecati earum consequuntur repellat dignissimos distinctio cupiditate ullam similique maiores.
+        Numquam inventore iure illo. Ipsum delectus cumque quibusdam unde impedit esse hic eius quas ipsa itaque et at fuga odit rem repellendus ullam, optio aliquam est? Odit maxime nobis exercitationem.
+        Voluptatum sequi molestias id. Mollitia eum omnis, voluptatibus necessitatibus quo illum fugit? Voluptas minus nam ratione impedit nulla! Sed velit id accusamus in minima neque iure sapiente, culpa quo perspiciatis.
+        Modi incidunt quis dolorem dignissimos sint cum quae sit. Sit rerum minus deserunt unde, quidem doloremque libero saepe ab maiores voluptate? Nesciunt repudiandae aut excepturi quis reiciendis dignissimos eum eius!
+        Beatae omnis officia dolorum minima neque labore quisquam iusto ipsam fuga autem unde cum, dicta cupiditate sit voluptatibus? Error incidunt repellendus reiciendis obcaecati corporis alias minima architecto porro deleniti soluta.
+        Sint quidem beatae architecto hic dolor! Hic, similique ratione, sapiente necessitatibus incidunt aperiam voluptatibus iure alias odit minima animi veniam consequatur illo maiores deleniti quod aut magnam molestias tempora ad!
+        Laudantium totam vitae quia, labore eaque ea illo repudiandae recusandae fugiat illum est assumenda minus magni amet. Quae laborum tempore repellat laudantium! Fugit rerum sequi voluptatum sit, laborum voluptatibus est.
+        Quaerat, labore molestias, atque voluptates sit aspernatur distinctio minima blanditiis exercitationem, totam perspiciatis id earum nemo error! Quia earum assumenda exercitationem cum non sequi, molestias aspernatur. Maiores quis esse totam!</p>
+    </LandingSection>
 </template>
 
 <style scoped lang="scss">
@@ -227,16 +208,6 @@
             gap: 16px;
         }
     }
-}
-
-#about, #experience {
-    margin-top: 50dvh;
-    margin-bottom: 50dvh;
-    padding-top: 128px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 128px;
 }
 
 #about {
