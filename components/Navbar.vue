@@ -71,6 +71,11 @@ header {
             font-size: 14px;
             color: inherit;
             font-family: $font-mono;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $accent;
+            }
         }
 
         span {

@@ -1,15 +1,15 @@
 <script setup lang="ts">
 
-    defineProps({
+    const props = defineProps({
         num: Number,
         heading: String,
-        dark: Boolean,
+        scheme: String,
     });
 
 </script>
 
 <template>
-    <section>
+    <section :class="props.scheme">
         <div class="heading">
             <h5><span>0{{ num }}.</span>{{ heading }}</h5>
             <hr>
@@ -26,7 +26,6 @@ section {
     margin-top: 50dvh;
     margin-bottom: 50dvh;
     padding-top: 128px;
-    color: v-bind('dark ? "$light-gray" : "$dark"');
 
     .heading {
         display: flex;
@@ -35,19 +34,36 @@ section {
 
         hr {
             flex: 1;
-            border-color: v-bind('dark ? "$light-gray" : "$dark"');
         }
 
-        h5 span {
-            font-family: $font-mono;
-            color: $accent;
-            margin-right: 14px;
+        h5 {
+            span {
+                font-family: $font-mono;
+                color: $accent;
+                margin-right: 14px;
+            }
         }
     }
     
     .content {
         padding: 0 67px;
         margin-top: 42px;
+    }
+
+    &.light {
+        color: $dark;
+        
+        hr {
+            border-color: $dark;
+        }
+    } 
+
+    &.dark {
+        color: $light-gray;
+        
+        hr {
+            border-color: $light-gray;
+        }
     }
 }
 
