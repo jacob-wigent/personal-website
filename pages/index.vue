@@ -10,7 +10,6 @@
     const colorBlock = useTemplateRef('color-block');
     const heroContent = useTemplateRef('hero-content');
     
-    // Control markers globally
     const showMarkers = false;
 
     onMounted(() => {
@@ -51,6 +50,7 @@
                 ease: "power2.in",
             }, "-=0.3");
 
+
         // Timeline 2: Block moves up + Experience animates in
         const timeline2 = gsap.timeline({
             scrollTrigger: {
@@ -88,7 +88,8 @@
                 ease: "power2.in"
             }, "-=0.3");
 
-        // Hero content animation (separate)
+
+        // Hero content animation
         gsap.to(heroContent.value.children, {
             y: '-15dvh',
             opacity: 0,

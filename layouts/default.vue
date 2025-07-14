@@ -4,7 +4,9 @@
 
 <template>
   <div class="site-wrapper">
+    <!-- <Bubble /> -->
     <Navbar :forground-scheme="forgroundScheme" :background-scheme="backgroundScheme" />
+    <Socials :forground-scheme="forgroundScheme" />
     <main>
       <slot />
     </main>
