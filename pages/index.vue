@@ -133,7 +133,7 @@
             </div>
         </div>
     </section>
-    <LandingSection id="about" num="1" heading="About Me" scheme="dark">
+    <LandingSection id="about" num="1" heading="About Me" scheme="dark" :animated="true">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum qui eligendi laboriosam eius totam eos consequuntur unde. Dicta officiis ipsa ratione nostrum doloremque quo doloribus, corporis reiciendis provident, itaque repellat.
         Sed quae possimus deserunt quos eos, excepturi optio quidem modi maiores fugit at veniam nobis perspiciatis aspernatur dicta quam debitis quod temporibus quisquam praesentium quibusdam a id aperiam velit. Ipsum.
         Odit error dicta asperiores laboriosam alias eum fugiat dolorum, officiis nam earum temporibus doloremque suscipit quam! Rerum consequatur modi, quo obcaecati earum consequuntur repellat dignissimos distinctio cupiditate ullam similique maiores.
@@ -143,7 +143,31 @@
         Beatae omnis officia dolorum minima neque labore quisquam iusto ipsam fuga autem unde cum, dicta cupiditate sit voluptatibus? Error incidunt repellendus reiciendis obcaecati corporis alias minima architecto porro deleniti soluta.</p>
         <Button>Learn More</Button>
     </LandingSection>
-    <LandingSection id="experience" num="2" heading="My Experience" scheme="light">
+    <LandingSection id="experience" num="2" heading="My Experience" scheme="light" :animated="true">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum qui eligendi laboriosam eius totam eos consequuntur unde. Dicta officiis ipsa ratione nostrum doloremque quo doloribus, corporis reiciendis provident, itaque repellat.
+        Sed quae possimus deserunt quos eos, excepturi optio quidem modi maiores fugit at veniam nobis perspiciatis aspernatur dicta quam debitis quod temporibus quisquam praesentium quibusdam a id aperiam velit. Ipsum.
+        Odit error dicta asperiores laboriosam alias eum fugiat dolorum, officiis nam earum temporibus doloremque suscipit quam! Rerum consequatur modi, quo obcaecati earum consequuntur repellat dignissimos distinctio cupiditate ullam similique maiores.
+        Numquam inventore iure illo. Ipsum delectus cumque quibusdam unde impedit esse hic eius quas ipsa itaque et at fuga odit rem repellendus ullam, optio aliquam est? Odit maxime nobis exercitationem.
+        Voluptatum sequi molestias id. Mollitia eum omnis, voluptatibus necessitatibus quo illum fugit? Voluptas minus nam ratione impedit nulla! Sed velit id accusamus in minima neque iure sapiente, culpa quo perspiciatis.
+        Modi incidunt quis dolorem dignissimos sint cum quae sit. Sit rerum minus deserunt unde, quidem doloremque libero saepe ab maiores voluptate? Nesciunt repudiandae aut excepturi quis reiciendis dignissimos eum eius!
+        Beatae omnis officia dolorum minima neque labore quisquam iusto ipsam fuga autem unde cum, dicta cupiditate sit voluptatibus? Error incidunt repellendus reiciendis obcaecati corporis alias minima architecto porro deleniti soluta.
+        Sint quidem beatae architecto hic dolor! Hic, similique ratione, sapiente necessitatibus incidunt aperiam voluptatibus iure alias odit minima animi veniam consequatur illo maiores deleniti quod aut magnam molestias tempora ad!
+        Laudantium totam vitae quia, labore eaque ea illo repudiandae recusandae fugiat illum est assumenda minus magni amet. Quae laborum tempore repellat laudantium! Fugit rerum sequi voluptatum sit, laborum voluptatibus est.
+        Quaerat, labore molestias, atque voluptates sit aspernatur distinctio minima blanditiis exercitationem, totam perspiciatis id earum nemo error! Quia earum assumenda exercitationem cum non sequi, molestias aspernatur. Maiores quis esse totam!</p>
+    </LandingSection>
+    <LandingSection id="projects" num="3" heading="My Projects" scheme="light" :animated="false">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum qui eligendi laboriosam eius totam eos consequuntur unde. Dicta officiis ipsa ratione nostrum doloremque quo doloribus, corporis reiciendis provident, itaque repellat.
+        Sed quae possimus deserunt quos eos, excepturi optio quidem modi maiores fugit at veniam nobis perspiciatis aspernatur dicta quam debitis quod temporibus quisquam praesentium quibusdam a id aperiam velit. Ipsum.
+        Odit error dicta asperiores laboriosam alias eum fugiat dolorum, officiis nam earum temporibus doloremque suscipit quam! Rerum consequatur modi, quo obcaecati earum consequuntur repellat dignissimos distinctio cupiditate ullam similique maiores.
+        Numquam inventore iure illo. Ipsum delectus cumque quibusdam unde impedit esse hic eius quas ipsa itaque et at fuga odit rem repellendus ullam, optio aliquam est? Odit maxime nobis exercitationem.
+        Voluptatum sequi molestias id. Mollitia eum omnis, voluptatibus necessitatibus quo illum fugit? Voluptas minus nam ratione impedit nulla! Sed velit id accusamus in minima neque iure sapiente, culpa quo perspiciatis.
+        Modi incidunt quis dolorem dignissimos sint cum quae sit. Sit rerum minus deserunt unde, quidem doloremque libero saepe ab maiores voluptate? Nesciunt repudiandae aut excepturi quis reiciendis dignissimos eum eius!
+        Beatae omnis officia dolorum minima neque labore quisquam iusto ipsam fuga autem unde cum, dicta cupiditate sit voluptatibus? Error incidunt repellendus reiciendis obcaecati corporis alias minima architecto porro deleniti soluta.
+        Sint quidem beatae architecto hic dolor! Hic, similique ratione, sapiente necessitatibus incidunt aperiam voluptatibus iure alias odit minima animi veniam consequatur illo maiores deleniti quod aut magnam molestias tempora ad!
+        Laudantium totam vitae quia, labore eaque ea illo repudiandae recusandae fugiat illum est assumenda minus magni amet. Quae laborum tempore repellat laudantium! Fugit rerum sequi voluptatum sit, laborum voluptatibus est.
+        Quaerat, labore molestias, atque voluptates sit aspernatur distinctio minima blanditiis exercitationem, totam perspiciatis id earum nemo error! Quia earum assumenda exercitationem cum non sequi, molestias aspernatur. Maiores quis esse totam!</p>
+    </LandingSection>
+    <LandingSection id="contact" num="4" heading="Get In Touch" scheme="light" :animated="false">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum qui eligendi laboriosam eius totam eos consequuntur unde. Dicta officiis ipsa ratione nostrum doloremque quo doloribus, corporis reiciendis provident, itaque repellat.
         Sed quae possimus deserunt quos eos, excepturi optio quidem modi maiores fugit at veniam nobis perspiciatis aspernatur dicta quam debitis quod temporibus quisquam praesentium quibusdam a id aperiam velit. Ipsum.
         Odit error dicta asperiores laboriosam alias eum fugiat dolorum, officiis nam earum temporibus doloremque suscipit quam! Rerum consequatur modi, quo obcaecati earum consequuntur repellat dignissimos distinctio cupiditate ullam similique maiores.
@@ -209,7 +233,7 @@
 }
 
 #about {
-    z-index: 10;
+    z-index: 2;
     position: relative;
 }
 

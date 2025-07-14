@@ -1,15 +1,42 @@
 <script setup lang="ts">
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from 'gsap/all';
+    
+    gsap.registerPlugin(ScrollTrigger);
 
     const props = defineProps({
         num: Number,
         heading: String,
         scheme: String,
+        animated: Boolean
     });
+
+    const sectionRef = useTemplateRef('sectionRef');
+
+    onMounted(() => {
+        if (!props.animated && sectionRef.value) {
+            gsap.from(sectionRef.value.querySelectorAll('.heading, .content'), {
+                y: 100,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.5,
+                ease: "power2.in",
+                scrollTrigger: {
+                    trigger: sectionRef.value,
+                    scrub: 1,
+                    start: 'top bottom',
+                    end: 'center center'
+                }
+            });
+        } else {
+            console.log("animated - skipping GSAP animation");
+        }
+    })
 
 </script>
 
 <template>
-    <section :class="props.scheme">
+    <section ref="sectionRef" :class="props.scheme + ' ' + (props.animated ? 'animated' : '')">
         <div class="heading">
             <h5><span>0{{ num }}.</span>{{ heading }}</h5>
             <hr>
@@ -23,9 +50,13 @@
 <style scoped lang="scss">
 
 section {
-    margin-top: 50dvh;
-    margin-bottom: 50dvh;
     padding-top: 128px;
+    margin-bottom: 0;
+    margin-top: 128px;
+
+    &.animated {
+        margin-top: 50dvh;
+    }
 
     .heading {
         display: flex;

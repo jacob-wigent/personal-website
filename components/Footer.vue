@@ -7,6 +7,7 @@
 <style scoped lang="scss">
     #copyright {
         font-size: 16px;
+        height: 40vh;
         color: $gray;
     }
 </style>

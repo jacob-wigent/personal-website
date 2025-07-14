@@ -10,9 +10,9 @@ const props = defineProps<{
 <template>
     <div id="socials" :class="forgroundScheme">
         <nav>
-            <a href="https://github.com/jacob-wigent" target="_blank"><Icon name="mynaui:brand-github" size="24px"/></a>
-            <a href="https://www.linkedin.com/in/jacob-wigent/" target="_blank"><Icon name="basil:linkedin-outline" size="24px"/></a>
-            <a href="https://www.youtube.com/@jacob_wigent" target="_blank"><Icon name="si:youtube-line" size="24px"/></a>
+            <a class="bubble-expand magnetic" href="https://github.com/jacob-wigent" target="_blank"><Icon name="mynaui:brand-github" size="24px"/></a>
+            <a class="bubble-expand magnetic" href="https://www.linkedin.com/in/jacob-wigent/" target="_blank"><Icon name="basil:linkedin-outline" size="24px"/></a>
+            <a class="bubble-expand magnetic" href="https://www.youtube.com/@jacob_wigent" target="_blank"><Icon name="si:youtube-line" size="24px"/></a>
         </nav>
         <div class="bar"></div>
     </div>
