@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import { currentScheme } from '~/composables/useScheme';
+  import { forgroundScheme, backgroundScheme } from '~/composables/useScheme';
 </script>
 
 <template>
   <div class="site-wrapper">
-    <Navbar :scheme="currentScheme" />
+    <Navbar :forground-scheme="forgroundScheme" :background-scheme="backgroundScheme" />
     <main>
       <slot />
     </main>
@@ -17,8 +17,6 @@
       min-height: 100dvh;
     }
     main {
-      padding-top: 96px;
-      min-height: 200vh;
       margin: 0 256px;
     }
 </style>

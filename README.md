@@ -40,6 +40,7 @@ npm run preview
 - [`@nuxt/fonts`](https://github.com/nuxt-modules/fonts) – load and optimize Google Fonts easily
 - **Sass (SCSS)** – for custom styles and layout, no utility frameworks
 - **GSAP** - for advanced animation
+- [**Typewriter Effect**](https://github.com/tameemsafi/typewriterjs) - For typing effect on landing page
 
 ---
 

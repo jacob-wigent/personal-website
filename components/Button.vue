@@ -6,6 +6,7 @@
 
 <style scoped lang="scss">
 .button {
+    z-index: 0;
     display: block;
     width: fit-content;
     padding: 12px 24px;
