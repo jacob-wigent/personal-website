@@ -96,7 +96,10 @@
     <Bubble v-if="bubbleEnabled"/>
     <Navbar :forground-scheme="forgroundScheme" :background-scheme="backgroundScheme" />
     <Socials :forground-scheme="forgroundScheme" />
-    <p id="bubble-toggle" class="bubble-expand" @click="bubbleEnabled = !bubbleEnabled">CURSOR <span>{{ bubbleEnabled ? 'ON' : 'OFF' }}</span></p>
+    <div id="bubble-toggle-container">
+        <p id="bubble-toggle" class="bubble-expand" @click="bubbleEnabled = !bubbleEnabled">CURSOR <span>{{ bubbleEnabled ? 'ON' : 'OFF' }}</span></p>
+        <div class="vertical-line"></div>
+    </div>
     <main>
       <slot />
     </main>
@@ -111,24 +114,42 @@
       margin: 0 256px;
     }
 
-    #bubble-toggle {
+    #bubble-toggle-container {
       position: fixed;
-      bottom: 16px;
-      right: 12px;
+      bottom: 0px;
+      right: 36px;
+      z-index: 4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .vertical-line {
+        width: 1px;
+        height: 64px;
+        background-color: $gray;
+        margin-top: 16px;
+      }
+    }
+
+    #bubble-toggle {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       transform: rotate(180deg);
       font-family: $font-mono;
       color: $gray;
-      z-index: 4;
+      transition: transform 0.1s ease;
 
       &:hover {
         cursor: pointer;
+        span {
+          margin-top: 5px;
+        }
       }
 
       span {
         color: $accent;
         font-weight: 900;
+        transition: margin-top 0.15s ease;
       }
     }
 </style>

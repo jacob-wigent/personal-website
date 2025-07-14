@@ -5,9 +5,16 @@
 </template>
 
 <style scoped lang="scss">
+    footer {
+        background-color: $dark;
+        height: 428px;
+        margin-top: 256px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #copyright {
         font-size: 16px;
-        height: 40vh;
         color: $gray;
     }
 </style>
