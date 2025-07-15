@@ -94,7 +94,7 @@
 
 <template>
     <Bubble v-if="bubbleEnabled"/>
-    <Navbar :forground-scheme="forgroundScheme" :background-scheme="backgroundScheme" />
+    <Navbar id="navbar" :forground-scheme="forgroundScheme" :background-scheme="backgroundScheme" />
     <Socials :forground-scheme="forgroundScheme" />
     <div id="bubble-toggle-container">
         <p id="bubble-toggle" class="bubble-expand" @click="bubbleEnabled = !bubbleEnabled">CURSOR <span>{{ bubbleEnabled ? 'ON' : 'OFF' }}</span></p>
@@ -111,7 +111,7 @@
       min-height: 100dvh;
     }
     main {
-      margin: 0 256px;
+      margin: 0 156px;
     }
 
     #bubble-toggle-container {
