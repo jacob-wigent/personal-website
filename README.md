@@ -41,6 +41,7 @@ npm run preview
 - **Sass (SCSS)** – for custom styles and layout, no utility frameworks
 - **GSAP** - for advanced animation
 - [**Typewriter Effect**](https://github.com/tameemsafi/typewriterjs) - For typing effect on landing page
+- [**GitHub Chart API**](https://ghchart.rshah.org/) - Easy HTML image element embed for GitHub contributions chart. API hosted by [2016rshah](https://github.com/2016rshah)
 
 ---
 
